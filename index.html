@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="db.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <form class="guest-input">
+                <input type="text" id="firstname" placeholder="First Name" required>
+                <input type="text" id="lastname" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <textarea id="notes"></textarea>
+                <button id="btn" type="button" value="submit" onclick="add();">Submit</button>
+            </form>
+        </div>
+        <div class="right">
+            <h1>Guest List</h1>
+            <input type="input" value="Refresh Guest List" onclick="readAll();">
+            <div id="entries">
+
+            </div>
+            <input type="input" value="Clear Guest List" onclick="clearList();">
+        </div>
+    </body>
+</html>

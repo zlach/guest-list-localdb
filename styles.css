@@ -1,0 +1,9 @@
+.left{
+    width: 50%;
+    float: left;
+}
+.right{
+    border: 1px solid purple;
+    float: right;
+    width: 49%
+}
